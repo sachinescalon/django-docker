@@ -34,5 +34,8 @@ services:
         environment:
             - MYSQL_DATABASE=django-app-db
             - MYSQL_ALLOW_EMPTY_PASSWORD=true
+            # - MYSQL_USER: 'root'
+            # - MYSQL_PASSWORD: 'password'
+            # - MYSQL_ROOT_PASSWORD: 'password'
         volumes:
             - ./data/mysql/db:/var/lib/mysql
